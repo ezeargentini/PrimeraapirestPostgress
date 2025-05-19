@@ -69,7 +69,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
 
     res.status(201).json({ newUser, message: "Usuario creado con exito" });
   } catch (error) {
-    res.status(500).json({ message: "Error al registrar usuario", error });
+    res.status(500).json({ message: "Error al registrar el usuario", error });
   }
 };
 
